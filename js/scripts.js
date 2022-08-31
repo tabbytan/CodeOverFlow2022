@@ -53,7 +53,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-function getResults(){
+function getResults() {
     // for easy integration the flags will be set individually 
     console.log("this is working")
 
@@ -66,13 +66,12 @@ function getResults(){
     aviationemissions = 90 * params.get("plane");
     // function to allow for switching of scenarios if something is above or below average
     // we should do a model or smth here with the check for average thing
-    checkaverage(gasemissions,fuelemmissions,aviationemissions);
-    
+    checkaverage(gasemissions, fuelemmissions, aviationemissions);
 
-    
+
+
 }
-function checkaverage(gasemissions,fuelemmissions,aviationemissions){
-    console.log("checkaverage")
+function checkaverage(gasemissions, fuelemmissions, aviationemissions) {
     let gasflag = 0
     let fuelflag = 0
     let aviationflag = 0
@@ -81,28 +80,41 @@ function checkaverage(gasemissions,fuelemmissions,aviationemissions){
     let fuelaverage = 0
     let aviationaverage = 0
     //
-    if (gasemissions >= gasaverage){
+    if (gasemissions >= gasaverage) {
         gasflag = 1
-    }   
-    if (fuelemmissions >= fuelaverage){
+    }
+    if (fuelemmissions >= fuelaverage) {
         fuelflag = 1
-    }   
-    if (aviationemissions >= aviationaverage){
+    }
+    if (aviationemissions >= aviationaverage) {
         aviationflag = 1
-    }   
-    console.log(gasflag,fuelflag,aviationflag);
-    const flags = [gasflag,fuelflag,aviationflag]
-    return flags
+    }
+    console.log(gasflag, fuelflag, aviationflag);
+    const flags = [gasflag, fuelflag, aviationflag]
+    displayResult(flags);
 }
-function displayResult(flag){
+
+function displayResult(flag) {
+    // gas
     if (flag[0] == 1) {
-        // dothis
+        // for example set the css to shown/hidden.
     }
+    else {
+        // for example set the css to shown/hidden.
+    }
+    // fuel
     if (flag[1] == 1) {
-        // dothis
+        // for example set the css to shown/hidden.
     }
+    else {
+        // for example set the css to shown/hidden.
+    }
+    // aviation
     if (flag[2] == 1) {
-        // dothis
+        // for example set the css to shown/hidden.
+    }
+    else {
+        // for example set the css to shown/hidden.
     }
 }
 
