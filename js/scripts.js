@@ -53,19 +53,36 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-function clickOn(){
-    let carbonfootprintlimit = 0 
-    formvalue = document.getElementById("myText").value;
-    if (formvalue >= carbonfootprintlimit){
-        dothis()
-    }
-    else{
-        dothat()
-    }
-}
-function dothis(){
+function getResults(){
+    // for easy integration the flags will be set individually 
+    let gasflag = 0
+    let fuelflag = 0
+    let aviationflag = 0
+    electricbill = document.getElementById("electricbill").value;
+    fuel = document.getElementById("fuel").value;
+    flightduration = document.getElementById("flightduration").value;
+    gasemissions = 0.408 * electricbill;
+    fuelemmissions = 0.63 * fuel;
+    aviationemissions = 90 * flightduration;
+    // function to allow for switching of scenarios if something is above or below average
+    // we should do a model or smth here with the check for average thing
+    checkForAverage = (gasemissions,fuelemmissions,aviationemissions) => {
 
+        // set values here
+        let gasaverage = 0
+        let fuelaverage = 0
+        let aviationaverage = 0
+        if (gasemissions >= gasaverage){
+            gasflag = 1
+        }   
+        if (fuelemmissions >= fuelaverage){
+            fuelflag = 1
+        }   
+        if (aviationemissions >= aviationaverage){
+            aviationflag = 1
+        }   
+        console.log(gasflag,fuelflag,aviationflag)
+    };
 }
-function dothat(){
 
-}
+
