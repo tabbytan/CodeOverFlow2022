@@ -76,9 +76,9 @@ function checkaverage(gasemissions, fuelemmissions, aviationemissions) {
     let fuelflag = 0
     let aviationflag = 0
     // set values here
-    let gasaverage = 0
-    let fuelaverage = 0
-    let aviationaverage = 0
+    let gasaverage = 20
+    let fuelaverage = 20
+    let aviationaverage = 20
     //
     if (gasemissions >= gasaverage) {
         gasflag = 1
@@ -95,26 +95,38 @@ function checkaverage(gasemissions, fuelemmissions, aviationemissions) {
 }
 
 function displayResult(flag) {
+    var blank = document.querySelector(".result .col > div").innerText = "";
+
+    var redFilter = "blur(2px) grayscale(80%) brightness(40%) sepia(50%) hue-rotate(-50deg) saturate(500%) contrast(0.8)";
+    var greenFilter = "blur(4px) grayscale(20%) brightness(80%) saturate(50%)";
+
+
     // gas
     if (flag[0] == 1) {
-        // for example set the css to shown/hidden.
+        document.getElementById("gas").innerText = "Your gas consumption is above the national avarage!";
+        document.getElementById("gas-img").style.filter = redFilter;
     }
     else {
-        // for example set the css to shown/hidden.
+        document.getElementById("gas").innerText = "Your gas consumption is XXX"
+        document.getElementById("gas-img").style.filter = greenFilter;
     }
     // fuel
     if (flag[1] == 1) {
-        // for example set the css to shown/hidden.
+        document.getElementById("fuel").innerText = "Your gas consumption is above the national avarage!";
+        document.getElementById("fuel-img").style.filter = redFilter;
     }
     else {
-        // for example set the css to shown/hidden.
+        document.getElementById("fuel").innerText = "Your gas consumption is XXX"
+        document.getElementById("fuel-img").style.filter = greenFilter;
     }
     // aviation
     if (flag[2] == 1) {
-        // for example set the css to shown/hidden.
+        document.getElementById("plane").innerText = "Your gas consumption is above the national avarage!";
+        document.getElementById("plane-img").style.filter = redFilter;
     }
     else {
-        // for example set the css to shown/hidden.
+        document.getElementById("plane").innerText = "Your gas consumption is XXX"
+        document.getElementById("plane-img").style.filter = greenFilter;
     }
 }
 

@@ -1,0 +1,39 @@
+.result {
+    margin-top: 88px;
+    padding: 1rem 0;
+}
+
+
+.result .col>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+body {
+    background: #121212;
+}
+
+.result .col {
+    height: 650px;
+    position: relative;
+}
+
+.result .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    width: 80%;
+    z-index: 10;
+}
+
+.result .total {
+    text-align: center;
+    color: white;
+}
