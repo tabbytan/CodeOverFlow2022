@@ -82,6 +82,27 @@
     <div class="container" id="calculate">
         <form action="Result.html" method="GET">
             <div class="mb-3">
+              <label for="tranportation">Tranportation</label>
+              <ul id="tranportation" style="list-style: none">
+                <li>
+                  <label for="bus">Bus</label>
+                  <input type="radio" name="bus" value="bus" id="bus">
+                </li>
+                <li>
+                  <label for="train">Train</label>
+                  <input type="radio" name="train" value="train" id="train">
+                </li>
+                <li>
+                  <label for="driving">Driving</label>
+                  <input type="radio" name="driving" value="driving" id="driving">
+                </li>
+              </ul>
+            </div>
+            <div class="mb-3" id="petrol-used" hidden>
+                <label for="gas" class="form-label">Liters</label>
+                <input  class="form-control" id="gas" name="gas">
+            </div>
+            <div class="mb-3">
                 <label for="gas" class="form-label" >Natural Gas Used</label>
                 <input  class="form-control" id="gas" name="gas">
             </div>
