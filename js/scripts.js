@@ -54,6 +54,7 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 function clickOn(){
+    let carbonfootprintlimit = 0 
     formvalue = document.getElementById("myText").value;
     if (formvalue >= carbonfootprintlimit){
         dothis()
