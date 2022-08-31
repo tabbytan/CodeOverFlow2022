@@ -55,34 +55,55 @@ window.addEventListener('DOMContentLoaded', event => {
 
 function getResults(){
     // for easy integration the flags will be set individually 
+    console.log("this is working")
+
+    const params = new URLSearchParams(window.location.search)
+    document.getElementById("gas").innerText = params.get("gas");
+    document.getElementById("fuel").innerText = params.get("fuel");
+    document.getElementById("plane").innerText = params.get("plane");
+    gasemissions = 0.408 * params.get("gas");
+    fuelemmissions = 0.63 * params.get("fuel");
+    aviationemissions = 90 * params.get("plane");
+    // function to allow for switching of scenarios if something is above or below average
+    // we should do a model or smth here with the check for average thing
+    checkaverage(gasemissions,fuelemmissions,aviationemissions);
+    
+
+    
+}
+function checkaverage(gasemissions,fuelemmissions,aviationemissions){
+    console.log("checkaverage")
     let gasflag = 0
     let fuelflag = 0
     let aviationflag = 0
-    electricbill = document.getElementById("electricbill").value;
-    fuel = document.getElementById("fuel").value;
-    flightduration = document.getElementById("flightduration").value;
-    gasemissions = 0.408 * electricbill;
-    fuelemmissions = 0.63 * fuel;
-    aviationemissions = 90 * flightduration;
-    // function to allow for switching of scenarios if something is above or below average
-    // we should do a model or smth here with the check for average thing
-    checkForAverage = (gasemissions,fuelemmissions,aviationemissions) => {
-
-        // set values here
-        let gasaverage = 0
-        let fuelaverage = 0
-        let aviationaverage = 0
-        if (gasemissions >= gasaverage){
-            gasflag = 1
-        }   
-        if (fuelemmissions >= fuelaverage){
-            fuelflag = 1
-        }   
-        if (aviationemissions >= aviationaverage){
-            aviationflag = 1
-        }   
-        console.log(gasflag,fuelflag,aviationflag)
-    };
+    // set values here
+    let gasaverage = 0
+    let fuelaverage = 0
+    let aviationaverage = 0
+    //
+    if (gasemissions >= gasaverage){
+        gasflag = 1
+    }   
+    if (fuelemmissions >= fuelaverage){
+        fuelflag = 1
+    }   
+    if (aviationemissions >= aviationaverage){
+        aviationflag = 1
+    }   
+    console.log(gasflag,fuelflag,aviationflag);
+    const flags = [gasflag,fuelflag,aviationflag]
+    return flags
+}
+function displayResult(flag){
+    if (flag[0] == 1) {
+        // dothis
+    }
+    if (flag[1] == 1) {
+        // dothis
+    }
+    if (flag[2] == 1) {
+        // dothis
+    }
 }
 
 
