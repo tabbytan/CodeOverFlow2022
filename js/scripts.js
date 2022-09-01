@@ -128,7 +128,7 @@ function displayResult(flag) {
         document.getElementById("plane").innerText = `Your aviation emissions is ${aviationemissions} tonnes CO2 equivalent`
         document.getElementById("plane-img").style.filter = greenFilter;
     }
-    let total = gasemissions + fuelemmissions + aviationemissions
+    let total = (gasemissions + fuelemmissions + aviationemissions).toFixed(2);
     document.getElementById("total").innerText = `My total carbon footprint: ${total} tonnes CO2 equivalent`;
 }
 
