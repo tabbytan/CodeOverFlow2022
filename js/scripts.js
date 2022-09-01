@@ -76,9 +76,9 @@ function checkaverage(gasemissions, fuelemmissions, aviationemissions) {
     let fuelflag = 0
     let aviationflag = 0
     // set values here
-    let gasaverage = 392.1
-    let fuelaverage = 83
-    let aviationaverage = 30.9
+    let gasaverage = 392.1 * 0.408;
+    let fuelaverage = 83 * 0.63;
+    let aviationaverage = 30.9 * 90;
     //
     if (gasemissions >= gasaverage) {
         gasflag = 1
