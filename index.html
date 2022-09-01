@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Carbonator &ndash; Calculate your carbon footprint!</title>
+    <title>Carbonator &ndash; Calculate your carbon footprint</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 
     <!-- Font Awesome icons (free version) -->
@@ -12,9 +12,7 @@
 
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Core theme CSS (includes Bootstrap) -->
     <link href="css/styles.css" rel="stylesheet">
@@ -79,7 +77,7 @@
                 <div class="col-lg-8">
                     <h2 class="text-white mb-4">Not Your Ordinary Calculator</h2>
                     <p class="text-white-50 mb-3">Carbonator encourages the user to make lifestyle changes and better day-to-day decisions for our planet.</p>
-                    <p class="text-white-50 mb-3">By calculating their carbon footprint and showing them their results, users can be more informed and make a positive impact for our planet by aiming to reduce their carbon emissions.</p>
+                    <p class="text-white-50 mb-3">By calculating their carbon footprint and showing them their results, users can be more informed and make a positive impact on our planet by aiming to reduce their carbon emissions.</p>
                     <p class="text-white-50 fst-italic">Did you know? The name Carbonator was derived from carbon and calculator.</p>
                 </div>
             </div>
@@ -94,40 +92,51 @@
             </div>
             <form action="Result.html" method="GET">
                 <div class="mb-3">
-                    <p>Please answer the following questions truthfully and to the best of your knowledge.</p>
+                    <small class="text-danger">
+                        <sup>*</sup>indicates mandatory response
+                    </small>
                 </div>
-                <div class="mb-3">
-                    <label for="tranportation">Tranportation</label>
+
+                <div class="mb-4">
+                    <label for="tranportation" class="fw-bold">
+                        <sup class="text-danger">*</sup>Q1. Select your most frequent mode of transport:
+                    </label>
                     <ul id="tranportation" style="list-style: none">
                         <li>
-                        <label for="bus">Bus</label>
-                        <input type="radio" name="bus" value="bus" id="bus">
+                            <input type="radio" name="bus" value="bus" id="bus">
+                            <label for="bus">Bus</label>
                         </li>
                         <li>
-                        <label for="train">Train</label>
-                        <input type="radio" name="train" value="train" id="train">
+                            <input type="radio" name="train" value="train" id="train">
+                            <label for="train">Train</label>
                         </li>
                         <li>
-                        <label for="driving">Driving</label>
-                        <input type="radio" name="driving" value="driving" id="driving">
+                            <input type="radio" name="driving" value="driving" id="driving">
+                            <label for="driving">Driving</label>
                         </li>
                     </ul>
                 </div>
+
                 <!-- <div class="mb-3" id="petrol-used" hidden>
                     <label for="gas" class="form-label">Liters</label>
                     <input class="form-control" id="gas" name="gas">
                 </div> -->
-                <div class="mb-3">
-                    <label for="gas" class="form-label">Natural Gas Used</label>
-                    <input class="form-control shadow-none" id="gas" name="gas">
+
+                <div class="mb-4">
+                    <label for="gas" class="form-label fw-bold">
+                        <sup class="text-danger">*</sup>Q2. Electricity and Gas Usage (in kWh):
+                    </label>
+                    <input class="form-control shadow-none" id="gas" name="gas" pattern="[0-9]+" required>
                 </div>
-                <div class="mb-3">
-                    <label for="Fuel" class="form-label" >Fuel Used</label>
-                    <input class="form-control shadow-none" id="fuel" name="fuel">
+
+                <div class="mb-4">
+                    <label for="fuel" class="form-label fw-bold">Q3. Fuel Usage (in litres):</label>
+                    <input class="form-control shadow-none" id="fuel" name="fuel" pattern="[0-9]+">
                 </div>
-                <div class="mb-3">
-                    <label for="plane" class="form-label" >Hours Flown</label>
-                    <input class="form-control shadow-none" id="plane" name="plane">
+
+                <div class="mb-4">
+                    <label for="plane" class="form-label fw-bold">Q4. Hours Flown:</label>
+                    <input class="form-control shadow-none" id="plane" name="plane" pattern="[0-9]+">
                 </div>
                 <button type="submit" class="btn btn-primary shadow-none">Submit</button>
             </form>
