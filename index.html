@@ -98,23 +98,19 @@
                 </div>
 
                 <div class="mb-4">
-                    <label for="tranportation" class="fw-bold">
-                        <sup class="text-danger">*</sup>Q1. Select your most frequent mode of transport:
-                    </label>
-                    <ul id="tranportation" style="list-style: none">
-                        <li>
-                            <input type="radio" name="bus" value="bus" id="bus">
-                            <label for="bus">Bus</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="train" value="train" id="train">
-                            <label for="train">Train</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="driving" value="driving" id="driving">
-                            <label for="driving">Driving</label>
-                        </li>
-                    </ul>
+                    <label for="tranportation" class="fw-bold">Q1. Select your most frequent mode of transport:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="bus" id="bus">
+                        <label class="form-check-label" for="bus">Bus</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="train" id="train">
+                        <label class="form-check-label" for="train">Train</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="driving" id="driving">
+                        <label class="form-check-label" for="driving">Personal Transport</label>
+                    </div>
                 </div>
 
                 <!-- <div class="mb-3" id="petrol-used" hidden>
