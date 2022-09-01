@@ -78,64 +78,58 @@
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8">
                     <h2 class="text-white mb-4">Not Your Ordinary Calculator</h2>
-                    <p class="text-white-50">
-                        Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now,
-                        simply download the template on
-                        <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
-                        The theme is open source, and you can use it for any purpose, personal or commercial.
-                    </p>
+                    <p class="text-white-50 mb-3">Carbonator encourages the user to make lifestyle changes and better day-to-day decisions for our planet.</p>
+                    <p class="text-white-50 mb-3">By calculating their carbon footprint and showing them their results, users can be more informed and make a positive impact for our planet by aiming to reduce their carbon emissions.</p>
+                    <p class="text-white-50 fst-italic">Did you know? The name Carbonator was derived from carbon and calculator.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Calculate Your Carbon Footprint -->
-    <div class="container" id="calculate">
-        <form action="Result.html" method="GET">
-            <div class="mb-3">
-              <label for="tranportation">Tranportation</label>
-              <ul id="tranportation" style="list-style: none">
-                <li>
-                  <label for="bus">Bus</label>
-                  <input type="radio" name="bus" value="bus" id="bus">
-                </li>
-                <li>
-                  <label for="train">Train</label>
-                  <input type="radio" name="train" value="train" id="train">
-                </li>
-                <li>
-                  <label for="driving">Driving</label>
-                  <input type="radio" name="driving" value="driving" id="driving">
-                </li>
-              </ul>
+    <section id="calculate">
+        <div class="container">
+            <div class="text-center pt-5 mb-5">
+                <h2 class="fw-bold">Carbon Footprint Calculator</h2>
             </div>
-            <!-- <div class="mb-3" id="petrol-used" hidden>
-                <label for="gas" class="form-label">Liters</label>
-                <input  class="form-control" id="gas" name="gas">
-            </div> -->
-            <div class="mb-3">
-                <label for="gas" class="form-label" >Natural Gas Used</label>
-                <input  class="form-control" id="gas" name="gas">
-            </div>
-            <div class="mb-3">
-                <label for="Fuel" class="form-label" >Fuel Used</label>
-                <input  class="form-control" id="fuel" name="fuel">
-            </div>
-            <div class="mb-3">
-                <label for="plane" class="form-label" >Hours Flown</label>
-                <input  class="form-control" id="plane" name="plane">
-            </div>
-            <!-- <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div> -->
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
+            <form action="Result.html" method="GET">
+                <div class="mb-3">
+                <label for="tranportation">Tranportation</label>
+                <ul id="tranportation" style="list-style: none">
+                    <li>
+                    <label for="bus">Bus</label>
+                    <input type="radio" name="bus" value="bus" id="bus">
+                    </li>
+                    <li>
+                    <label for="train">Train</label>
+                    <input type="radio" name="train" value="train" id="train">
+                    </li>
+                    <li>
+                    <label for="driving">Driving</label>
+                    <input type="radio" name="driving" value="driving" id="driving">
+                    </li>
+                </ul>
+                </div>
+                <!-- <div class="mb-3" id="petrol-used" hidden>
+                    <label for="gas" class="form-label">Liters</label>
+                    <input class="form-control" id="gas" name="gas">
+                </div> -->
+                <div class="mb-3">
+                    <label for="gas" class="form-label" >Natural Gas Used</label>
+                    <input class="form-control" id="gas" name="gas">
+                </div>
+                <div class="mb-3">
+                    <label for="Fuel" class="form-label" >Fuel Used</label>
+                    <input class="form-control" id="fuel" name="fuel">
+                </div>
+                <div class="mb-3">
+                    <label for="plane" class="form-label" >Hours Flown</label>
+                    <input class="form-control" id="plane" name="plane">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
 
     <!-- Why Join The Fight -->
     <section class="projects-section bg-light" id="join">
@@ -164,67 +158,58 @@
             </div>
 
             <!-- Increasing Temperature -->
-            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div class="row gx-0 mb-5 mb-lg-0 align-items-center">
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="assets/img/increasing-temperature.jpg" alt="increasing-temperature.jpg">
+                    <img class="img-fluid align-middle" src="assets/img/increasing-temperature.jpg" alt="increasing-temperature.jpg">
                 </div>
-
                 <div class="col-lg-6">
-                    <div class="bg-black text-center h-100 project">
+                    <div class="text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h4 class="text-white">Increasing Temperature</h4>
-                                <p class="mb-0 text-white-50">The Earth's atmosphere has increased by 1℃ since 1990. This may not be a lot but causes many changes to the Earth's ecosystem. The changes include intensified rainfall, increased drought severity, habitat change for plants and animals.</p>
-                                <hr class="d-none d-lg-block mb-0 ms-0">
+                                <h4 class="text-dark">Increasing Temperature</h4>
+                                <p class="mb-0 text-black-50">The Earth's atmosphere has increased by 1℃ since 1990. This may not be a lot but causes many changes to the Earth's ecosystem. The changes include intensified rainfall, increased drought severity, habitat change for plants and animals.</p>
+                                <hr class="d-none d-lg-block mb-0 mx-auto">
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <!-- Rising Sea Levels -->
-            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div class="row gx-0 mb-5 mb-lg-0 align-items-center">
                 <div class="col-lg-6">
                     <img class="img-fluid" src="assets/img/rising-sea-levels.jpg" alt="rising-sea-levels.jpg">
                 </div>
-
                 <div class="col-lg-6 order-lg-first">
-                    <div class="bg-black text-center h-100 project">
+                    <div class="text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <h4 class="text-white">Rising Sea Levels</h4>
-                                <p class="mb-0 text-white-50">The sea level has increased by 21cm since 1990 and the rate of sea level rising is accelerating.
-                                This rise destroy coastal habitat and oust people living along the coastline. Roads, bridges,
-                                water supplies, landfills and oil and gas wells remains at risk if the sea level continue to rise.</p>
-                                <hr class="d-none d-lg-block mb-0 me-0" />
+                                <h4 class="text-dark">Rising Sea Levels</h4>
+                                <p class="mb-0 text-black-50">The sea level has increased by 21cm since 1990 and the rate of sea level rising is accelerating. This rise destroy coastal habitat and oust people living along the coastline. Roads, bridges, water supplies, landfills and oil and gas wells remains at risk if the sea level continue to rise.</p>
+                                <hr class="d-none d-lg-block mb-0 mx-auto">
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <!-- Ocean Acidification -->
-            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div class="row gx-0 mb-5 mb-lg-0 align-items-center">
                 <div class="col-lg-6">
                     <img class="img-fluid" src="assets/img/ocean-acidification.jpg" alt="ocean-acidification.jpg">
                 </div>
-
                 <div class="col-lg-6">
-                    <div class="bg-black text-center h-100 project">
+                    <div class="text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h4 class="text-white">Ocean Acidification</h4>
-                                <p class="mb-0 text-white-50">The ocean absorbs 30% of carbon dioxide released in the atmosphere. In the past 200 years, the pH value of the ocean has decreased by 0.1, this translate to a 30% increase in acidity. Marine life that are unable to adjust to the acidification will die off.</p>
-                                <hr class="d-none d-lg-block mb-0 ms-0">
+                                <h4 class="text-dark">Ocean Acidification</h4>
+                                <p class="mb-0 text-black-50">The ocean absorbs 30% of carbon dioxide released in the atmosphere. In the past 200 years, the pH value of the ocean has decreased by 0.1, this translate to a 30% increase in acidity. Marine life that are unable to adjust to the acidification will die off.</p>
+                                <hr class="d-none d-lg-block mb-0 mx-auto">
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </section>
 
