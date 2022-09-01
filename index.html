@@ -7,7 +7,7 @@
     <title>Carbonator &ndash; Calculate your carbon footprint!</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 
-    <!-- Font Awesome icons (free version)-->
+    <!-- Font Awesome icons (free version) -->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 
     <!-- Google fonts-->
@@ -16,16 +16,16 @@
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <!-- Core theme CSS (includes Bootstrap)-->
+    <!-- Core theme CSS (includes Bootstrap) -->
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
-    <!-- Navigation-->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#page-top">CARBONATOR</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+            <a class="navbar-brand" href="#page-top">Carbonator</a>
+            <button class="navbar-toggler navbar-toggler-right shadow-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -46,7 +46,7 @@
         </div>
     </nav>
 
-    <!-- Masthead-->
+    <!-- Landing Header -->
     <header class="masthead">
         <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
             <div class="d-flex justify-content-center">
@@ -54,18 +54,30 @@
                     <h1 class="mx-auto my-0 text-uppercase">Carbonator</h1>
                     <h2 class="text-white-50 mx-auto mt-2 mb-5">Make better day-to-day decisions for our future.</h2>
                     <h2 class="text-white-50 mx-auto mt-2 mb-5">Together, let's fight climate change!</h2>
-                    <a class="btn btn-primary" href="#calculate">Calculate Your Carbon Footprint</a>
+
+                    <!-- Desktop Button -->
+                    <a class="btn btn-primary d-none d-md-block" href="#calculate">Calculate Your Carbon Footprint</a>
+
+                    <!-- Mobile Button -->
+                    <a class="btn btn-primary d-md-none px-3 py-2" href="#calculate">Calculate Your Carbon Footprint</a>
+                    <div class="mt-3 fw-bold">
+                        <a href="#about" class="text-decoration-none">
+                            Learn More
+                            <br>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- About Carbonator-->
+    <!-- About Carbonator -->
     <section class="about-section text-center" id="about">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8">
-                    <h2 class="text-white mb-4">Built with Bootstrap 5</h2>
+                    <h2 class="text-white mb-4">Not Your Ordinary Calculator</h2>
                     <p class="text-white-50">
                         Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now,
                         simply download the template on
@@ -74,7 +86,6 @@
                     </p>
                 </div>
             </div>
-            <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
         </div>
     </section>
 
@@ -126,41 +137,58 @@
         </form>
     </div>
 
-    <!-- Why Join The Fight-->
+    <!-- Why Join The Fight -->
     <section class="projects-section bg-light" id="join">
         <div class="container px-4 px-lg-5">
-            <!-- Featured Project Row-->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Why Join The Fight Against Climate Change?</h2>
+            </div>
+            
+            <!-- Climate Change Video -->
             <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg"
-                        alt="..." /></div>
+                <div class="col-xl-8 col-lg-7">
+                    <video class="img-fluid mb-3 mb-lg-0" controls>
+                        <source src="assets/vid/climate-change-video.mp4" type="video/mp4">
+                    </video>
+                </div>
                 <div class="col-xl-4 col-lg-5">
                     <div class="featured-text text-center text-lg-left">
-                        <h4>Combat Climate Change</h4>
-                        <p class="text-black-50 mb-0">Carbon emissions causes increasing temperature, rising sea levels and ocean acidification.
-                        </p>
+                        <h4>We are ALL affected, no matter where we live</h4>
+                        <p class="text-black-50 mb-0">Climate change won&CloseCurlyQuote;t just impact forest, or coral reefs, or even people in far-off countries &ndash; it will affect all of us. From more extreme weather to increasing food prices, to recreation and decreased opportunities to appreciate the natural world, people everywhere will feel its effects. Reducing our carbon footprint is fundamentally necessary to create a world where people and nature thrive.</p>
                     </div>
                 </div>
             </div>
-            <!-- Project One Row-->
+
+            <div class="text-center mb-5">
+                <h4 class="fw-bold">How Climate Change Affects Us?</h4>
+            </div>
+
+            <!-- Increasing Temperature -->
             <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="assets/img/increasing-temperature.jpg" alt="increasing-temperature.jpg">
+                </div>
+
                 <div class="col-lg-6">
                     <div class="bg-black text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
                                 <h4 class="text-white">Increasing Temperature</h4>
-                                <p class="mb-0 text-white-50">The Earth's atmosphere has increased by 1℃ since 1990. This may not be a lot but
-                                causes many changes to the Earth's ecosystem. The chsnges include intensified rainfall, increased drought severity,
-                                habitat change for plants and animals.</p>
-                                <hr class="d-none d-lg-block mb-0 ms-0" />
+                                <p class="mb-0 text-white-50">The Earth's atmosphere has increased by 1℃ since 1990. This may not be a lot but causes many changes to the Earth's ecosystem. The changes include intensified rainfall, increased drought severity, habitat change for plants and animals.</p>
+                                <hr class="d-none d-lg-block mb-0 ms-0">
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-            <!-- Project Two Row-->
+
+            <!-- Rising Sea Levels -->
             <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="assets/img/rising-sea-levels.jpg" alt="rising-sea-levels.jpg">
+                </div>
+
                 <div class="col-lg-6 order-lg-first">
                     <div class="bg-black text-center h-100 project">
                         <div class="d-flex h-100">
@@ -174,24 +202,29 @@
                         </div>
                     </div>
                 </div>
+
             </div>
-            <!-- Project Two Three-->
-            <div class="row gx-0 justify-content-center">
-                <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
-                <div class="col-lg-6 order-lg-first">
+
+            <!-- Ocean Acidification -->
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="assets/img/ocean-acidification.jpg" alt="ocean-acidification.jpg">
+                </div>
+
+                <div class="col-lg-6">
                     <div class="bg-black text-center h-100 project">
                         <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
                                 <h4 class="text-white">Ocean Acidification</h4>
-                                <p class="mb-0 text-white-50">The ocean absorbs 30% of Carbon dioxide released in the atmosphere. In the past 200 years, the pH value of the
-                                ocean has decreased by 0.1, this translate to a 30% increase in acidity. Marine life that are unable to adjust to the acidification will die off.
-                                </p>
-                                <hr class="d-none d-lg-block mb-0 me-0" />
+                                <p class="mb-0 text-white-50">The ocean absorbs 30% of carbon dioxide released in the atmosphere. In the past 200 years, the pH value of the ocean has decreased by 0.1, this translate to a 30% increase in acidity. Marine life that are unable to adjust to the acidification will die off.</p>
+                                <hr class="d-none d-lg-block mb-0 ms-0">
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
+
         </div>
     </section>
 
