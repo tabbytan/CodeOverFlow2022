@@ -37,3 +37,7 @@ body {
     text-align: center;
     color: white;
 }
+
+.subtext {
+    font-size: 0.8rem;
+}
