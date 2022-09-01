@@ -112,20 +112,20 @@ function displayResult(flag) {
     }
     // fuel
     if (flag[1] == 1) {
-        document.getElementById("fuel").innerText = "Your gas consumption is above the national avarage!";
+        document.getElementById("fuel").innerText = "Your fuel consumption is above the national avarage!";
         document.getElementById("fuel-img").style.filter = redFilter;
     }
     else {
-        document.getElementById("fuel").innerText = `Your gas comsumption is ${fuelemmissions} tonnes CO2 equivalent`
+        document.getElementById("fuel").innerText = `Your fuel comsumption is ${fuelemmissions} tonnes CO2 equivalent`
         document.getElementById("fuel-img").style.filter = greenFilter;
     }
     // aviation
     if (flag[2] == 1) {
-        document.getElementById("plane").innerText = "Your gas consumption is above the national avarage!";
+        document.getElementById("plane").innerText = "Your aviation emissions is above the national avarage!";
         document.getElementById("plane-img").style.filter = redFilter;
     }
     else {
-        document.getElementById("plane").innerText = `Your gas comsumption is ${aviationemissions} tonnes CO2 equivalent`
+        document.getElementById("plane").innerText = `Your aviation emissions is ${aviationemissions} tonnes CO2 equivalent`
         document.getElementById("plane-img").style.filter = greenFilter;
     }
     let total = gasemissions + fuelemmissions + aviationemissions
