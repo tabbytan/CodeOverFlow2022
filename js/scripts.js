@@ -107,7 +107,7 @@ function displayResult(flag) {
         document.getElementById("gas-img").style.filter = redFilter;
     }
     else {
-        document.getElementById("gas").innerText = "Your gas consumption is XXX"
+        document.getElementById("gas").innerText = `Your gas comsumption is ${gasemissions} tonnes CO2 equivalent`
         document.getElementById("gas-img").style.filter = greenFilter;
     }
     // fuel
@@ -116,7 +116,7 @@ function displayResult(flag) {
         document.getElementById("fuel-img").style.filter = redFilter;
     }
     else {
-        document.getElementById("fuel").innerText = "Your gas consumption is XXX"
+        document.getElementById("fuel").innerText = `Your gas comsumption is ${fuelemmissions} tonnes CO2 equivalent`
         document.getElementById("fuel-img").style.filter = greenFilter;
     }
     // aviation
@@ -125,9 +125,11 @@ function displayResult(flag) {
         document.getElementById("plane-img").style.filter = redFilter;
     }
     else {
-        document.getElementById("plane").innerText = "Your gas consumption is XXX"
+        document.getElementById("plane").innerText = `Your gas comsumption is ${aviationemissions} tonnes CO2 equivalent`
         document.getElementById("plane-img").style.filter = greenFilter;
     }
+    let total = gasemissions + fuelemmissions + aviationemissions
+    document.getElementById("total").innerText = `My total carbon footprint: ${total} tonnes CO2 equivalent`;
 }
 
 
